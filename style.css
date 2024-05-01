@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #24252A;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+li, a, button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 2px 2px 5px rgb(69, 69, 69);
+}
+
+.navigation li {
+    list-style: none;
+    padding: 30px;
+}
+
+li a:hover {
+    color: rgb(227, 7, 194);
+}
+.navigation {
+    display: flex;
+}
+
+button {
+    background-color: rgb(0, 25, 150);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 25, 150);
+}
+
+.welcome {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.first_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 180px 1fr;
+    color: white;
+    padding: 50px 4% 0 4%;
+}
+
+.profile_photo {
+    margin-top: -50px;
+    width: 300px;
+    grid-area: 1/1/3/2;
+}
+
+.article {
+    grid-area: 1/2/2/4;
+    text-align: justify;
+    margin-left: -15px;
+}
+
+.skills {
+    grid-area: 2/2/3/3;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.trainings {
+    margin-left: -15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.me {
+    margin-left: -15px;
+    grid-area: 3/2/4/4;
+    text-align: justify;
+}
+
+.second_container {
+    margin-top: 50px;
+    background-color: white;
+}
+
+.image {
+    width: 350px;
+    box-shadow: 5px 5px 10px lightblue;
+}
+
+.awards {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    padding: 50px
+}
+
+.award {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 0 0 100px 0;
+}
+
+.third_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 25px 25px 25px 25px 25px 25px;
+    color: white;
+    margin: 0 25% 0 25%;
+    margin-bottom: 50px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    grid-area: 1/1/2/3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imp {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 10px 10px 10px 5px white;
+}
+.follow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25px 25px 25px;
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.copy {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .image {
+        width: 200px;
+    }
+
+    .first_container {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 120px 250px 1fr;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .image {
+        width: 200px;
+    }
+
+    .first_container {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 120px 150px 150px 100px;
+        margin-top: 50px
+    }
+
+    .training {
+        grid-area: 3/2/4/4;
+    }
+
+    .me {
+        grid-area: 4/2/5/4
+    }
+
+    .third_container {
+        margin: 0 20% 0 20%;
+    }
+}
+
+@media (max-width: 878px) {
+
+    .skills {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .first_container {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .skills, .trainings {
+        text-align: left;
+    }
+
+    .skill li, .training li {
+        text-align: left;
+    }
+
+
+    .third_container {
+        margin: 0 4%;
+        grid-template-rows: auto;
+    }
+
+    .article, .profile_photo, .skill , .training {
+        margin-bottom: 20px;
+    }
+
+    .award {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 0 0%;
+        box-shadow: 2px 2px 5px rgb(69, 69, 69);
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navigation li {
+        padding: 20px;
+    }
+}
